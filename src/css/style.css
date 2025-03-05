@@ -403,6 +403,7 @@ body {
 }
 
 .drop-btn {
+   background: var(--primary-color);
    color: var(--white-color);
    border-radius: 10px;
    margin: 10px;
@@ -411,8 +412,7 @@ body {
 }
 
 .drop-btn:hover {
-   background: var(--primary-color);
-   color: var(--white-color);
+   background: var(--hover-color);
 }
 
 

@@ -2305,6 +2305,10 @@ body {
       margin: 0;
    }
 
+   .avatar-container{
+      margin: auto 0;
+   }
+
    .avatar-container .avatar-info .name {
       text-align: center;
       align-items: center;

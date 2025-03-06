@@ -2146,6 +2146,10 @@ body {
       margin-right: 25px;
    }
 
+   .avatar-img {
+        width: 300px;
+    }
+
    .logo a {
       font-size: var(--h1-font-size);
    }

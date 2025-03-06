@@ -726,6 +726,7 @@ body {
    justify-content: center;
    align-items: center;
    column-gap: 25px;
+   margin: 0px 50px;
 }
 
 .avatar-img {
@@ -818,7 +819,7 @@ body {
    display: grid;
    justify-content: center;
    row-gap: 3px;
-   margin-left: 50px;
+   /* margin-left: 50px; */
    /* my */
    display: flex;
    flex-direction: column;
@@ -2146,10 +2147,6 @@ body {
       margin-right: 25px;
    }
 
-   .avatar-img {
-        width: 300px;
-    }
-
    .logo a {
       font-size: var(--h1-font-size);
    }
@@ -2298,6 +2295,14 @@ body {
    .container {
       margin-left: 20px;
       margin-right: 20px;
+   }
+
+   .avatar-img{
+      height: 300px;
+   }
+
+   .home-scroll-btn{
+      margin: 0;
    }
 
    .avatar-container .avatar-info .name {

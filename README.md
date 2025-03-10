@@ -29,7 +29,7 @@ This is my personal portfolio website built using **HTML, CSS, and JavaScript**.
 - 🔗 **Social Media Links**  
 
 #### 🔗 Follow Me
-- 🫳 [Linkedin](https://www.linkedin.com/feed/)
+- 🫳 [Linkedin](www.linkedin.com/in/winodh-prasanna)
 - 🫳 [Facebook]()
 - 🫳 [Github](https://github.com/WINODH-PRASANNA)
 - 🫳 [Pinterest](https://www.pinterest.com/winodhprasannablog/_boards/)

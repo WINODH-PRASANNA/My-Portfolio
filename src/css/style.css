@@ -2144,7 +2144,7 @@ body {
       --font-bold: 600;
    }
 
-/*    #home {
+   /*    #home {
       padding-top: 80px;
    } */
 
@@ -2303,15 +2303,15 @@ body {
       margin-right: 20px;
    }
 
-   .avatar-img{
+   .avatar-img {
       height: 300px;
    }
 
-   .home-scroll-btn{
+   .home-scroll-btn {
       margin: 0;
    }
 
-   .avatar-container{
+   .avatar-container {
       margin: auto 0;
    }
 

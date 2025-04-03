@@ -1437,7 +1437,7 @@ body {
    transition: 0.3s ease;
 }
 
-.portfolio-card .card-img:hover img {
+.portfolio-card:hover .card-img img {
    filter: grayscale(0%);
 }
 

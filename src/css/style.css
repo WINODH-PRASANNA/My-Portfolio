@@ -1,8 +1,8 @@
 /* =========================================
    Google Fonts
 ========================================= */
-/* @import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap'); */
 
 /* =========================================
    CSS Variables
@@ -56,8 +56,8 @@
    --scrollbar-thumb-hover: hsl(var(--hue) var(--sat) calc(var(--light) - 7%));
 
    /* ======= Font and typography ======= */
-   /* --body-font-family: "Arimo", serif; */
-   --body-font-family: "PT Serif", sans-serif;
+   --body-font-family: "Arimo", serif;
+/*    --body-font-family: "PT Serif", sans-serif; */
 
    /* ======= Font sizes ======= */
    --h1-font-size: 2.85rem;

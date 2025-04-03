@@ -1437,6 +1437,10 @@ body {
    transition: 0.3s ease;
 }
 
+.portfolio-card .card-img:hover img {
+   filter: grayscale(0%);
+}
+
 .portfolio-card .card-info {
    position: relative;
    padding: 10px 15px 20px 20px;

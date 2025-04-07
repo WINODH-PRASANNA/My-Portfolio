@@ -400,10 +400,17 @@ ScrollReveal JS animations
 ===================================================== */
 
 // Common reveal options to create reveal animations.
+// ScrollReveal({
+//     reset: true,
+//     distance: '30px',
+//     duration: 2500,
+//     delay: 400
+// });
+
 ScrollReveal({
     reset: true,
     distance: '30px',
-    duration: 2500,
+    duration: 3500,
     delay: 400
 });
 

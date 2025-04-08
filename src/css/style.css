@@ -795,7 +795,6 @@ body {
    display: flex;
    flex-direction: column;
    row-gap: 10px;
-   margin-left: -60px;
 }
 
 .avatar-info .hello-text {
@@ -2272,6 +2271,10 @@ body {
    .to-top-btn.active {
       right: 20px;
    }
+
+   .avatar-info .text-content{
+      margin-left: -60px;
+   }
 }
 
 /* =========================================
@@ -2322,5 +2325,9 @@ body {
       text-align: center;
       align-items: center;
       font-size: var(--h3-font-size);
+   }
+
+   .avatar-info .text-content{
+      margin-left: -60px;
    }
 }

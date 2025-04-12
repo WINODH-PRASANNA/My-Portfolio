@@ -1124,37 +1124,10 @@ body {
 .skill-cat {
    display: grid;
    place-items: left;
-   grid-template-columns: repeat(2, 1fr);
-   column-gap: 65px;
+   grid-template-columns: repeat(3, 1fr);
+   column-gap: 50px;
    row-gap: 35px;
    padding: 0px 50px;
-}
-
-.skill {
-   display: flex;
-   column-gap: 15px;
-}
-
-.skill-info {
-   display: flex;
-   flex-direction: column;
-   row-gap: 5px;
-}
-
-.skill i {
-   color: var(--primary-color);
-   font-size: var(--h4-font-size);
-}
-
-.skill-info h5 {
-   color: var(--color-02);
-   font-size: var(--h5-font-size);
-   font-weight: var(--font-semi-bold);
-}
-
-.skill-info span {
-   color: var(--color-04);
-   font-size: var(--tiny-font-size);
 }
 
 /* =========================================

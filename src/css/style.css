@@ -188,6 +188,11 @@ body {
 /* =========================================
    Reusable Styles
 ========================================= */
+
+.home-content {
+  min-height: 100vh;
+}
+
 .section {
    position: relative;
    overflow: hidden;

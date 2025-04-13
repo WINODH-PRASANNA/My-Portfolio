@@ -2216,6 +2216,11 @@ body {
    .avatar-info .text-content{
       margin-left: -60px;
    }
+
+   .home-content {
+    min-height: auto; /* or set a smaller height */
+    padding: 1rem 0; /* Optional: adjust spacing */
+   }
 }
 
 /* =========================================

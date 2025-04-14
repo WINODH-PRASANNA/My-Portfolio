@@ -2285,4 +2285,8 @@ body {
    #home{
       margin-top: -60px;
    }
+
+   .home-container .wrapper{
+      padding-top: 100px;
+   }
 }

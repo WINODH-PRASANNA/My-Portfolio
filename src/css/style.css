@@ -2289,4 +2289,12 @@ body {
    .home-container .wrapper{
       padding-top: 100px;
    }
+
+   .contact-form-body form .send-mess {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+   }
 }

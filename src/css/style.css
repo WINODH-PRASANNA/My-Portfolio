@@ -1309,6 +1309,11 @@ body {
    font-size: var(--h4-font-size);
    font-weight: var(--font-semi-bold);
    margin-bottom: 15px;
+   margin-left: 60px;
+}
+
+.modal-content .my-services{
+   margin-left: 60px;
 }
 
 .modal-content .my-services li {

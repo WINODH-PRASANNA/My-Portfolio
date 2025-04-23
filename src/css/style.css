@@ -1533,6 +1533,10 @@ body {
    font-weight: var(--font-regular);
 }
 
+.portfolio-modal .modal-content .des span {
+   color: var(--primary-color);
+}
+
 /* =========================================
    Testimonials
 ========================================= */

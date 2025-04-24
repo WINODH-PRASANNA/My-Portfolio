@@ -3,7 +3,9 @@
 ========================================= */
 /* @import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap'); */
 /* @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Marmelad&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Marmelad&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 /* =========================================
    CSS Variables
@@ -59,7 +61,9 @@
    /* ======= Font and typography ======= */
    /* --body-font-family: "Arimo", serif; */
    /* --body-font-family: "PT Serif", sans-serif; */
-   --body-font-family: "Marmelad";
+   /* --body-font-family: "Marmelad", sans-serif; */
+   /* --body-font-family: "inter"; */
+   --body-font-family: "Open Sans";
 
    /* ======= Font sizes ======= */
    --h1-font-size: 2.85rem;
@@ -190,7 +194,7 @@ body {
 ========================================= */
 
 .home-content {
-  min-height: 100vh;
+   min-height: 100vh;
 }
 
 .section {
@@ -1938,6 +1942,11 @@ body {
 
 .footer .copy-right a:hover {
    color: var(--color-01);
+}
+
+#show-btn {
+   display: inline-block;
+   margin: 20px auto;
 }
 
 /* =========================================

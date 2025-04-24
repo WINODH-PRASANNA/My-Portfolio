@@ -396,6 +396,36 @@ if (themeBtn) {
 }
 
 /* =====================================================
+Show More Button
+===================================================== */
+
+document.addEventListener("DOMContentLoaded", () => {
+    const showBtn = document.getElementById("show-btn");
+    const cards = document.querySelectorAll(".portfolio-container .card-with-modal");
+    const rowsToShow = 3;
+    let isExpanded = false;
+
+    function updateView() {
+        cards.forEach((card, index) => {
+            if (!isExpanded && index >= rowsToShow * 2) {
+                card.style.display = "none";
+            } else {
+                card.style.display = "block";
+            }
+        });
+        showBtn.textContent = isExpanded ? "Show Less" : "Show More";
+    }
+
+    showBtn.addEventListener("click", () => {
+        isExpanded = !isExpanded;
+        updateView();
+    });
+
+    updateView();
+});
+
+
+/* =====================================================
 ScrollReveal JS animations
 ===================================================== */
 
@@ -436,4 +466,3 @@ ScrollReveal JS animations
 // ScrollReveal().reveal(' .contact-itom, .contact-social-links li, .footer-menu .menu-item', { delay: 10, origin: 'bottom' });
 // ScrollReveal().reveal('.client-swiper, .contact-form-body', { delay: 10, origin: 'right' });
 // ScrollReveal().reveal('.contact-info h3', { delay: 10, origin: 'bottom'});
-

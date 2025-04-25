@@ -413,7 +413,10 @@ document.addEventListener("DOMContentLoaded", () => {
                 card.style.display = "block";
             }
         });
-        showBtn.textContent = isExpanded ? "Show Less" : "Show More";
+
+        showBtn.innerHTML = isExpanded
+            ? 'Show Less <i class="ri-indeterminate-circle-line"></i>'
+            : 'Show More <i class="ri-add-circle-line"></i>';
     }
 
     showBtn.addEventListener("click", () => {

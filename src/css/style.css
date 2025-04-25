@@ -5,7 +5,9 @@
 /* @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap'); */
 /* @import url('https://fonts.googleapis.com/css2?family=Marmelad&display=swap'); */
 /* @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+
 
 /* =========================================
    CSS Variables
@@ -63,7 +65,8 @@
    /* --body-font-family: "PT Serif", sans-serif; */
    /* --body-font-family: "Marmelad", sans-serif; */
    /* --body-font-family: "inter"; */
-   --body-font-family: "Open Sans";
+   /* --body-font-family: "Open Sans"; */
+   --body-font-family: "Merriweather";
 
    /* ======= Font sizes ======= */
    --h1-font-size: 2.85rem;

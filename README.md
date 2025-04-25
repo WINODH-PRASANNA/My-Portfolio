@@ -7,7 +7,6 @@ This is a modern, interactive, and fully responsive **personal portfolio website
 
 ## 🌐 Live Preview
 
-> You can view the live version of the site by opening the `index.html` file in any modern browser.
 [Click here to view the portfolio](https://winodh-prasanna.github.io/My-Portfolio/).
 
 ---
@@ -99,12 +98,6 @@ project-root/
 **Winodh Prasanna**  
 Fullstack Web Developer  
 [LinkedIn](https://www.linkedin.com/in/winodh-prasanna/) | [GitHub](https://github.com/WINODH-PRASANNA)
-
----
-
-## 📄 License
-
-This project is licensed under the MIT License. Feel free to use and modify.
 
 ---
 

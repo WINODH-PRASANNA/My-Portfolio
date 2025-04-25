@@ -396,7 +396,7 @@ if (themeBtn) {
 }
 
 /* =====================================================
-Show More Button
+Show All Button
 ===================================================== */
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -416,7 +416,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         showBtn.innerHTML = isExpanded
             ? 'Show Less <i class="ri-indeterminate-circle-line"></i>'
-            : 'Show More <i class="ri-add-circle-line"></i>';
+            : 'Show All <i class="ri-add-circle-line"></i>';
     }
 
     showBtn.addEventListener("click", () => {

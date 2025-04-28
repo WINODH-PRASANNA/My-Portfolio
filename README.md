@@ -114,3 +114,9 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 - Improve accessibility for screen readers
 - Add language switcher for multilingual support
 
+## 🔗 Follow Me
+- 🚀 [Linkedin](https://www.linkedin.com/in/winodh-prasanna)
+- 🚀 [Github](https://github.com/WINODH-PRASANNA)
+- 🚀 [Facebook](https://www.facebook.com/profile.php?id=61575625475553&mibextid=ZbWKwL)
+- 🚀 [LeetCode](https://leetcode.com/u/Winodh-Prasanna)
+- 🚀 [HackerRank](https://www.hackerrank.com/profile/winodh_prasanna1)

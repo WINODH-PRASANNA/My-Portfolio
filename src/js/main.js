@@ -137,7 +137,7 @@ portfolioCardsWithModals.forEach((portfolioCardWithModal) => {
 Testimonial Swiper
 ===================================================== */
 
-var swiper = new Swiper(".client-swiper", {
+var swiper = new Swiper(".certi-swiper", {
     slidesPerView: 1,
     spaceBetween: 30,
     loop: true,
@@ -396,7 +396,7 @@ if (themeBtn) {
 }
 
 /* =====================================================
-Show All Button
+Show More Button
 ===================================================== */
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -416,7 +416,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         showBtn.innerHTML = isExpanded
             ? 'Show Less <i class="ri-indeterminate-circle-line"></i>'
-            : 'Show All <i class="ri-add-circle-line"></i>';
+            : 'Show More <i class="ri-add-circle-line"></i>';
     }
 
     showBtn.addEventListener("click", () => {
@@ -425,6 +425,25 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     updateView();
+});
+
+// Handle certificate click on mobile
+const certificateItems = document.querySelectorAll('.certificate-item');
+
+certificateItems.forEach(item => {
+    item.addEventListener('click', function () {
+        if (window.innerWidth <= 768) {
+            // Close any other open certificates
+            certificateItems.forEach(otherItem => {
+                if (otherItem !== item && otherItem.classList.contains('active')) {
+                    otherItem.classList.remove('active');
+                }
+            });
+
+            // Toggle current certificate
+            this.classList.toggle('active');
+        }
+    });
 });
 
 

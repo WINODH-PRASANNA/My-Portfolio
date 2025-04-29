@@ -1169,7 +1169,7 @@ body {
    overflow: hidden;
 }
 
-.service-card:hover .service-see-more{
+.service-card:hover .service-see-more {
    color: var(--hover-color);
 }
 
@@ -1319,7 +1319,7 @@ body {
    margin-left: 60px;
 }
 
-.modal-content .my-services{
+.modal-content .my-services {
    margin-left: 60px;
 }
 
@@ -1573,38 +1573,38 @@ body {
    column-gap: 45px;
 }
 
-.swiper-slide .client-img {
-   width: 185px;
+.swiper-slide .certi-img {
+   width: 200px;
 }
 
-.swiper-slide .client-img img {
+.swiper-slide .certi-img img {
    width: 100%;
    border-radius: 10px;
 }
 
-.swiper-slide .client-details {
+.swiper-slide .certi-details {
    max-width: 500px;
    text-align: left;
 }
 
-.swiper-slide .client-details h3 {
+.swiper-slide .certi-details h3 {
    color: var(--color-02);
    font-size: var(--xlarge-font-size);
    font-weight: var(--font-semi-bold);
    margin-bottom: 5px;
 }
 
-.swiper-slide .client-details span {
+.swiper-slide .certi-details span {
+   color: var(--color-04);
+   font-size: var(--medium-font-size);
+   font-weight: var(--font-regular);
+   margin-top: 15px;
+}
+
+.swiper-slide .certi-details p {
    color: var(--color-04);
    font-size: var(--small-font-size);
    font-weight: var(--font-regular);
-}
-
-.swiper-slide .client-details p {
-   color: var(--color-02);
-   font-size: var(--base-font-size);
-   font-weight: var(--font-regular);
-   margin-top: 15px;
 }
 
 .swiper-button-next:after,
@@ -2064,11 +2064,11 @@ body {
       flex-direction: column;
    }
 
-   .swiper-slide .client-img {
+   .swiper-slide .certi-img {
       margin-bottom: 35px;
    }
 
-   .swiper-slide .client-details {
+   .swiper-slide .certi-details {
       text-align: center;
    }
 
@@ -2239,13 +2239,15 @@ body {
       right: 20px;
    }
 
-   .avatar-info .text-content{
+   .avatar-info .text-content {
       margin-left: -60px;
    }
 
    .home-content {
-    min-height: auto; /* or set a smaller height */
-    padding: 1rem 0; /* Optional: adjust spacing */
+      min-height: auto;
+      /* or set a smaller height */
+      padding: 1rem 0;
+      /* Optional: adjust spacing */
    }
 }
 
@@ -2299,15 +2301,15 @@ body {
       font-size: var(--h3-font-size);
    }
 
-   .avatar-info .text-content{
+   .avatar-info .text-content {
       margin-left: -60px;
    }
 
-   #home{
+   #home {
       margin-top: -60px;
    }
 
-   .home-container .wrapper{
+   .home-container .wrapper {
       padding-top: 100px;
    }
 

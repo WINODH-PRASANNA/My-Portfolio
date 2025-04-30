@@ -5,9 +5,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--==========Title ==========-->
-    <title>Winodh Prasanna | Personal Portfolio</title>
+    <title>WINODH PRASANNA</title>
     <!--========== Shortcut Icon ==========-->
-    <link rel="shortcut icon" href="src/images/avatar/avatar.png" type="image/x-icon">
+    <link rel="shortcut icon" href="src/images/favicon.png" type="image/x-icon">
     <!--========== Swiper CSS ==========-->
     <link rel="stylesheet" href="src/css/swiper-bundle.min.css">
     <!--========== Main style sheet ==========-->
@@ -40,7 +40,7 @@
       <div class="container">
         <div class="inner">
           <div class="logo">
-            <a href="#"><span>Winodh</span></a>
+            <a href="#home"><span>Winodh</span></a>
           </div>
           <div class="header-btns">
             <div class="main-btn border-btn lets-take-btn">
@@ -106,7 +106,7 @@
               <div class="text-content">
                 <h4 class="hello-text">Hello There, I'm</h4>
                 <h1 class="name">Winodh Prasanna</h1>
-                <p class="i-do">Fullstack Web Developer</p>
+                <p class="i-do">Full-Stack Developer</p>
               </div>
               <div class="main-btn fill-btn hire-btn-2">
                 <a href="#contact">Hire Me <i class="ri-user-follow-line"></i></a>
@@ -136,9 +136,9 @@
             </div>
             <div class="about-details">
               <div class="about-info">
-                <h4 class="iam">~ Fullstack Web Developer ~</h4>
-                <p class="about-des">Software developer with a strong focus on producing top-quality results in web
-                  development and design. Skilled in multiple frameworks and programming language.</p>
+                <h4 class="iam">Full-Stack Developer</h4>
+                <p class="about-des">Software developer with a strong focus on delivering high-quality web applications
+                  and user-centric design. Proficient in multiple frameworks and programming languages.</p>
               </div>
               <div class="pro-list">
                 <div class="pro-card">
@@ -458,10 +458,20 @@
             <p>My Creative Works</p>
           </div>
 
+          <div class="portfolio-tabs">
+            <a class="tab-btn active" data-filter="all">All</a>
+            <a class="tab-btn" data-filter="html">HTML</a>
+            <a class="tab-btn" data-filter="react">REACT</a>
+            <a class="tab-btn" data-filter="python">PYTHON</a>
+            <a class="tab-btn" data-filter="java">JAVA</a>
+            <a class="tab-btn" data-filter="php">PHP</a>
+            <a class="tab-btn" data-filter="c#">C#</a>
+          </div>
+
           <div class="section-content">
             <div class="portfolio-container">
 
-              <div class="card-with-modal front-end">
+              <div class="card-with-modal default-show html">
                 <div class="portfolio-card">
                   <div class="card-img">
                     <img src="src/images/project/tfc.png">
@@ -504,7 +514,7 @@
 
               </div>
 
-              <div class="card-with-modal front-end">
+              <div class="card-with-modal default-show react">
                 <div class="portfolio-card">
                   <div class="card-img">
                     <img src="src/images/project/movie-buddy.png">
@@ -548,7 +558,7 @@
 
               </div>
 
-              <div class="card-with-modal front-end">
+              <div class="card-with-modal default-show html">
                 <div class="portfolio-card">
                   <div class="card-img">
                     <img src="src/images/project/amazon.png">
@@ -592,7 +602,7 @@
 
               </div>
 
-              <div class="card-with-modal full-stack">
+              <div class="card-with-modal default-show php">
                 <div class="portfolio-card">
                   <div class="card-img">
                     <img src="src/images/project/univertech.png">
@@ -637,7 +647,7 @@
 
               </div>
 
-              <div class="card-with-modal front-end">
+              <div class="card-with-modal default-show html">
                 <div class="portfolio-card">
                   <div class="card-img">
                     <img src="src/images/project/gemini.png">
@@ -683,7 +693,7 @@
 
               </div>
 
-              <div class="card-with-modal front-end">
+              <div class="card-with-modal default-show python">
                 <div class="portfolio-card">
                   <div class="card-img">
                     <img src="src/images/project/color.png">
@@ -705,12 +715,19 @@
                         <img src="src/images/project/color.png" alt="">
                       </div>
                       <h4 class="modal-title">🎨 Color Picker from Image 🎨</h4>
-                      <p class="des">The Color Picker from Image project is a <span>Python</span>-based desktop application built with Tkinter that allows users to select an image file and extract its top 10 dominant colors using the ColorThief library. With a visually appealing and user-friendly interface, the app displays color swatches along with their corresponding HEX codes, making it useful for designers, developers, and artists seeking quick color inspiration from any image. The project integrates image handling with Pillow and color analysis using ColorThief, all packaged in a modern, responsive GUI.</p>
+                      <p class="des">The Color Picker from Image project is a <span>Python</span>-based desktop
+                        application built with Tkinter that allows users to select an image file and extract its top 10
+                        dominant colors using the ColorThief library. With a visually appealing and user-friendly
+                        interface, the app displays color swatches along with their corresponding HEX codes, making it
+                        useful for designers, developers, and artists seeking quick color inspiration from any image.
+                        The project integrates image handling with Pillow and color analysis using ColorThief, all
+                        packaged in a modern, responsive GUI.</p>
                       <ul class="drop-btns">
                         <img src="https://skillicons.dev/icons?i=python">
                       </ul>
                       <div class="drop-btns">
-                        <a href="https://github.com/WINODH-PRASANNA/Color-Picker.git" class="drop-btn" target="_blank"><i class="ri-github-fill"></i> <span>Code
+                        <a href="https://github.com/WINODH-PRASANNA/Color-Picker.git" class="drop-btn"
+                          target="_blank"><i class="ri-github-fill"></i> <span>Code
                           </span></a>
                         <a href="" class="drop-btn" target="_blank"><i class="ri-facebook-circle-fill"></i>
                           <span>Demo</span></a>
@@ -721,7 +738,7 @@
 
               </div>
 
-              <div class="card-with-modal front-end">
+              <div class="card-with-modal html">
                 <div class="portfolio-card">
                   <div class="card-img">
                     <img src="src/images/project/digital-art.png">
@@ -768,7 +785,7 @@
 
               </div>
 
-              <div class="card-with-modal front-end">
+              <div class="card-with-modal html">
                 <div class="portfolio-card">
                   <div class="card-img">
                     <img src="src/images/project/portfolio.png">
@@ -814,7 +831,7 @@
 
               </div>
 
-              <div class="card-with-modal front-end">
+              <div class="card-with-modal html">
                 <div class="portfolio-card">
                   <div class="card-img">
                     <img src="src/images/project/food.png">
@@ -859,7 +876,7 @@
 
               </div>
 
-              <div class="card-with-modal front-end">
+              <div class="card-with-modal html">
                 <div class="portfolio-card">
                   <div class="card-img">
                     <img src="src/images/project/ai.png">
@@ -904,7 +921,7 @@
 
               </div>
 
-              <div class="card-with-modal front-end">
+              <div class="card-with-modal html">
                 <div class="portfolio-card">
                   <div class="card-img">
                     <img src="src/images/project/travel.png">
@@ -948,7 +965,7 @@
 
               </div>
 
-              <div class="card-with-modal back-end">
+              <div class="card-with-modal java">
                 <div class="portfolio-card">
                   <div class="card-img">
                     <img src="src/images/project/atm.png">
@@ -994,7 +1011,7 @@
 
               </div>
 
-              <div class="card-with-modal back-end">
+              <div class="card-with-modal react">
                 <div class="portfolio-card">
                   <div class="card-img">
                     <img src="src/images/project/portfolio_react.png">
@@ -1016,12 +1033,20 @@
                         <img src="src/images/project/portfolio_react.png" alt="">
                       </div>
                       <h4 class="modal-title">🛠️ Portfolio Design using React 🛠️</h4>
-                      <p class="des">I developed a responsive and interactive portfolio website using <span>React</span>, <span>CSS</span>, and <span>JavaScript</span>, featuring a sleek dark/light theme toggle. The site includes key sections such as Home, About, Projects, and Contact, all designed with a clean and user-friendly interface. The Projects section highlights my work with detailed descriptions and links, allowing visitors to explore my skills through real examples. With smooth navigation and dynamic content rendering, the website effectively showcases my experience and provides a professional way for others to connect with me.</p>
+                      <p class="des">I developed a responsive and interactive portfolio website using
+                        <span>React</span>, <span>CSS</span>, and <span>JavaScript</span>, featuring a sleek dark/light
+                        theme toggle. The site includes key sections such as Home, About, Projects, and Contact, all
+                        designed with a clean and user-friendly interface. The Projects section highlights my work with
+                        detailed descriptions and links, allowing visitors to explore my skills through real examples.
+                        With smooth navigation and dynamic content rendering, the website effectively showcases my
+                        experience and provides a professional way for others to connect with me.
+                      </p>
                       <ul class="drop-btns">
                         <img src="https://skillicons.dev/icons?i=react,vite,js,html,css">
                       </ul>
                       <div class="drop-btns">
-                        <a href="https://github.com/WINODH-PRASANNA/portfolio_React.git" class="drop-btn" target="_blank"><i class="ri-github-fill"></i> <span>Code
+                        <a href="https://github.com/WINODH-PRASANNA/portfolio_React.git" class="drop-btn"
+                          target="_blank"><i class="ri-github-fill"></i> <span>Code
                           </span></a>
                         <a href="" class="drop-btn" target="_blank"><i class="ri-facebook-circle-fill"></i>
                           <span>Demo</span></a>
@@ -1032,7 +1057,7 @@
 
               </div>
 
-              <div class="card-with-modal back-end">
+              <div class="card-with-modal c#">
                 <div class="portfolio-card">
                   <div class="card-img">
                     <img src="src/images/project/clickme.png">
@@ -1085,8 +1110,12 @@
         </div>
 
         <!-- show more btn -->
-        <div style="text-align: center; margin-top: 50px; margin-bottom: 50px;">
+        <!-- <div style="text-align: center; margin-top: 50px; margin-bottom: 50px;">
           <button id="show-btn" class="main-btn fill-btn">Show More</button>
+        </div> -->
+
+        <div class="show-more-btn-container"  style="text-align: center; margin-top: 50px; margin-bottom: 50px;">
+          <button class="main-btn fill-btn show-more-btn">Show More</button>
         </div>
 
         <!-- My Certificate -->

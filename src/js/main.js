@@ -400,31 +400,88 @@ Show More Button
 ===================================================== */
 
 document.addEventListener("DOMContentLoaded", () => {
-    const showBtn = document.getElementById("show-btn");
-    const cards = document.querySelectorAll(".portfolio-container .card-with-modal");
-    const rowsToShow = 3;
-    let isExpanded = false;
+    const portfolioTabs = document.querySelectorAll(".portfolio-tabs");
+    const showMoreBtn = document.querySelector(".show-more-btn");
+    const showMoreBtnContainer = document.querySelector(".show-more-btn-container");
+    const allCards = document.querySelectorAll(".portfolio-container .card-with-modal");
+    const defaultShowCards = document.querySelectorAll(".portfolio-container .default-show");
 
-    function updateView() {
-        cards.forEach((card, index) => {
-            if (!isExpanded && index >= rowsToShow * 2) {
-                card.style.display = "none";
-            } else {
-                card.style.display = "block";
-            }
+    // Function to show only first 6 projects
+    function showFirstSix() {
+        allCards.forEach(card => {
+            card.style.display = "none";
+            card.style.opacity = "0";
         });
-
-        showBtn.innerHTML = isExpanded
-            ? 'Show Less <i class="ri-indeterminate-circle-line"></i>'
-            : 'Show More <i class="ri-add-circle-line"></i>';
+        
+        defaultShowCards.forEach(card => {
+            card.style.display = "block";
+            setTimeout(() => {
+                card.style.opacity = "1";
+            }, 10);
+        });
+        
+        showMoreBtn.textContent = "Show More";
+        showMoreBtnContainer.style.display = "block";
     }
 
-    showBtn.addEventListener("click", () => {
-        isExpanded = !isExpanded;
-        updateView();
+    // Function to show all projects
+    function showAllProjects() {
+        allCards.forEach(card => {
+            card.style.display = "block";
+            setTimeout(() => {
+                card.style.opacity = "1";
+            }, 10);
+        });
+        
+        showMoreBtn.textContent = "Show Less";
+    }
+
+    // Toggle between show first six and show all
+    showMoreBtn.addEventListener("click", () => {
+        if (showMoreBtn.textContent === "Show More") {
+            showAllProjects();
+        } else {
+            showFirstSix();
+        }
     });
 
-    updateView();
+    portfolioTabs.forEach((tabs) => {
+        const portfolioTabBtns = tabs.querySelectorAll(".tab-btn");
+
+        portfolioTabBtns.forEach((tabBtn) => {
+            tabBtn.addEventListener("click", () => {
+                const filter = tabBtn.getAttribute("data-filter");
+
+                // Reset show more state when switching tabs
+                showMoreBtn.textContent = "Show More";
+
+                if (filter === "all") {
+                    showFirstSix();
+                    showMoreBtnContainer.style.display = "block";
+                } else {
+                    // For specific tabs, show all matching projects
+                    allCards.forEach(card => {
+                        if (card.classList.contains(filter)) {
+                            card.style.display = "block";
+                            setTimeout(() => {
+                                card.style.opacity = "1";
+                            }, 10);
+                        } else {
+                            card.style.display = "none";
+                            card.style.opacity = "0";
+                        }
+                    });
+                    showMoreBtnContainer.style.display = "none";
+                }
+
+                portfolioTabBtns.forEach(button => button.classList.remove("active"));
+                tabBtn.classList.add("active");
+            });
+        });
+    });
+
+    // Initialize - show first six projects by default
+    showFirstSix();
 });
 
 // Handle certificate click on mobile
@@ -446,45 +503,3 @@ certificateItems.forEach(item => {
     });
 });
 
-
-/* =====================================================
-ScrollReveal JS animations
-===================================================== */
-
-// Common reveal options to create reveal animations.
-// ScrollReveal({
-//     reset: true,
-//     distance: '30px',
-//     duration: 2500,
-//     delay: 400
-// });
-
-// ScrollReveal({
-//     reset: true,
-//     distance: '30px',
-//     duration: 3500,
-//     delay: 400
-// });
-
-// Target elements and specify options to create reveal animations.
-// ScrollReveal().reveal('.avatar-img', { delay: 100, origin: 'top' });
-// ScrollReveal().reveal('.avatar-info, .section-title', { delay: 300, origin: 'top' });
-// ScrollReveal().reveal('.home-social, .home-scroll-btn, .copy-right', { delay: 600, origin: 'bottom' });
-// ScrollReveal().reveal('.about-img', { delay: 700, origin: 'bottom' });
-// ScrollReveal().reveal('.about-info, .footer .logo', { delay: 300, origin: 'bottom' });
-// ScrollReveal().reveal('.pro-card, .about-buttons, .main-btn, .resume-tabs, .tab-btn, .portfolio-tabs .tab-btn', { delay: 500, origin: 'right', interval: 200 });
-// ScrollReveal().reveal('#resume .section-content', { delay: 700, origin: 'bottom' });
-// ScrollReveal().reveal('.service-card, .portfolio-card, .contact-itom, .contact-social-links li, .footer-menu .menu-item', { delay: 300, origin: 'bottom', interval: 300 });
-// ScrollReveal().reveal('.client-swiper, .contact-form-body', { delay: 700, origin: 'right' });
-// ScrollReveal().reveal('.contact-info h3', { delay: 100, origin: 'bottom', interval: 300 });
-
-// ScrollReveal().reveal('.avatar-img', { delay: 10, origin: 'top' });
-// ScrollReveal().reveal('.avatar-info, .section-title', { delay: 10, origin: 'top' });
-// ScrollReveal().reveal('.home-social, .home-scroll-btn, .copy-right', { delay: 10, origin: 'bottom' });
-// ScrollReveal().reveal('.about-img', { delay: 10, origin: 'bottom' });
-// ScrollReveal().reveal('.about-info, .footer .logo', { delay: 10, origin: 'bottom' });
-// ScrollReveal().reveal('.pro-card, .about-buttons, .main-btn', { delay: 10, origin: 'right' });
-// ScrollReveal().reveal('#resume .section-content', { delay: 10, origin: 'bottom' });
-// ScrollReveal().reveal(' .contact-itom, .contact-social-links li, .footer-menu .menu-item', { delay: 10, origin: 'bottom' });
-// ScrollReveal().reveal('.client-swiper, .contact-form-body', { delay: 10, origin: 'right' });
-// ScrollReveal().reveal('.contact-info h3', { delay: 10, origin: 'bottom'});

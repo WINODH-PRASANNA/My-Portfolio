@@ -1607,6 +1607,22 @@ body {
    font-weight: var(--font-regular);
 }
 
+.swiper-slide .certi-details a {
+   display: flex;
+   font-size: var(--small-font-size);
+   margin-top: 15px;
+   color: var(--color-01);
+   gap: 5px;
+}
+
+.swiper-slide .certi-details a i {
+   font-size: var(--large-font-size);
+}
+
+.swiper-slide .certi-details a:hover{
+   color: var(--hover-color);
+}
+
 .swiper-button-next:after,
 .swiper-button-prev:after {
    display: none;

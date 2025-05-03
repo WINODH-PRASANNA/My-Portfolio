@@ -1605,21 +1605,16 @@ body {
    color: var(--color-04);
    font-size: var(--small-font-size);
    font-weight: var(--font-regular);
+   margin-bottom: 10px;
 }
 
 .swiper-slide .certi-details a {
-   display: flex;
    font-size: var(--small-font-size);
-   margin-top: 15px;
    color: var(--color-01);
    gap: 5px;
 }
 
-.swiper-slide .certi-details a i {
-   font-size: var(--large-font-size);
-}
-
-.swiper-slide .certi-details a:hover{
+.swiper-slide .certi-details a:hover {
    color: var(--hover-color);
 }
 
@@ -2085,6 +2080,10 @@ body {
    }
 
    .swiper-slide .certi-details {
+      text-align: center;
+   }
+
+   .swiper-slide .certi-details a {
       text-align: center;
    }
 

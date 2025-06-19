@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link highlight js -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css">
+    <!-- link box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- link style sheet -->
+    <link rel="stylesheet" href="assets/style.css">
+    <!-- add web icon -->
+    <link rel="shortcut icon" href="assets/imgs/gemini.svg" type="image/x-icon">
+    <!-- title -->
+    <title>Google Gemini Clone</title>
+</head>
+<body>
+    
+    <nav class="navbar">
+        <h3 class="navbar-logo">Hello,<br>Winodh Prasanna</h3>
+        <button class="navbar-btn" id="themeToggle">
+            <i class='bx bx-sun'></i>
+        </button>
+    </nav>
+
+    <header class="header">
+        <div class="header-title">
+            <h1>Hello, There!</h1>
+            <h2>How can i help you today?</h2>
+        </div>
+        <div class="suggests">
+            <div class="suggests-item">
+                <p class="suggests-item-text">Give tips on helping kids finish their homework on time</p>
+                <div class="suggests-item-icon">
+                    <i class='bx bx-stopwatch'></i>
+                </div>
+            </div>
+            <div class="suggests-item">
+                <p class="suggests-item-text">Help me write an out-of-office email</p>
+                <div class="suggests-item-icon">
+                    <i class='bx bx-edit-alt'></i>
+                </div>
+            </div>
+            <div class="suggests-item">
+                <p class="suggests-item-text">Give me phrases to learn a new language</p>
+                <div class="suggests-item-icon">
+                    <i class='bx bx-compass'></i>
+                </div>
+            </div>
+            <div class="suggests-item">
+                <p class="suggests-item-text">Show me how to build something by hand</p>
+                <div class="suggests-item-icon">
+                    <i class='bx bx-wrench'></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="chats"></section>
+
+    <section class="prompt">
+        <form action="#" class="prompt-form" novalidate>
+            <div class="prompt-input-wrapper">
+                <input type="text" placeholder="Enter prompt hear..." required class="prompt-form-input">
+                <button class="prompt-form-btn" id="sendBtn">
+                    <i class='bx bx-send'></i>
+                </button>
+                <button class="prompt-form-btn" id="deletBtn">
+                    <i class='bx bx-trash'></i>
+                </button>
+            </div>
+        </form>
+        <p class="prompt-disclaim">
+            Gemini may display inaccurate info, including about people, so double check its responses.
+        </p>
+    </section>
+
+    <!-- link highlight js -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <!-- link script file -->
+    <script src="assets/script.js"></script>
+</body>
+</html>

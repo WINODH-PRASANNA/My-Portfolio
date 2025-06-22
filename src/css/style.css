@@ -733,6 +733,7 @@ body {
    align-items: center;
    column-gap: 25px;
    margin: 0px 50px;
+   margin-top: -100px;
 }
 
 .avatar-img {
@@ -2308,6 +2309,7 @@ body {
 
    .avatar-container {
       margin: auto 0;
+      margin-top: 70px;
    }
 
    .avatar-container .avatar-info .name {
@@ -2334,5 +2336,12 @@ body {
       justify-content: center;
       align-items: center;
       gap: 10px;
+   }
+}
+
+@media screen and (max-width: 479px) {
+   .avatar-container {
+      margin: auto 0;
+      margin-top: 50px;
    }
 }

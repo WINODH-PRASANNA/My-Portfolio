@@ -1087,7 +1087,7 @@ body {
 .experience .resume-line {
    background: var(--primary-color);
    width: 2px;
-   height: 120px;
+   height: 250px;
 }
 
 .education,

@@ -215,6 +215,9 @@ body {
    position: relative;
    width: 100%;
    height: 100%;
+   /*display: flex;
+   align-items: center;
+   justify-content: center;*/
 }
 
 .sub-container {
@@ -765,7 +768,7 @@ body {
 .home-social .social-line {
    background: var(--color-01);
    width: 1px;
-   height: 100px;
+   height: 50px;
    margin-top: 37px;
    margin-bottom: 25px;
    margin-left: 10px;
@@ -774,7 +777,7 @@ body {
 .home-social .social-icons {
    display: flex;
    flex-direction: column;
-   gap: 25px;
+   gap: 15px;
 }
 
 .home-social .social-icons li a {
@@ -799,11 +802,13 @@ body {
    display: flex;
    flex-direction: column;
    row-gap: 10px;
+   margin-top: 50px;
 }
 
 .avatar-info .hello-text {
    font-size: var(--base-font-size);
    font-weight: var(--font-semi-bold);
+   margin-bottom: -10px;
 }
 
 .avatar-info .name {
@@ -815,7 +820,8 @@ body {
 .avatar-info .i-do {
    font-size: var(--base-font-size);
    font-weight: var(--font-semi-bold);
-   margin-bottom: 35px;
+   margin-bottom: 30px;
+   font-size: var(--h4-font-size);
 }
 
 .home-scroll-btn {
@@ -869,7 +875,7 @@ body {
 ========================================= */
 .about-img {
    position: relative;
-   width: 35%;
+   width: 40%;
    display: flex;
    justify-content: center;
    align-items: center;
@@ -892,13 +898,19 @@ body {
    color: var(--color-02);
    font-size: var(--h4-font-size);
    font-weight: var(--font-semi-bold);
-   margin-bottom: 30px;
+   margin-bottom: 20px;
 }
 
 .about-des {
    font-size: var(--base-font-size);
    font-weight: var(--font-regular);
    line-height: 25px;
+}
+
+.about-des a{
+   color: var(--color-01);
+   font-weight: var(--font-medium);
+   transition: 0.3s;
 }
 
 .pro-list {
@@ -908,7 +920,7 @@ body {
    grid-template-columns: repeat(auto-fill, minmax(185px, 1fr));
    column-gap: 10px;
    row-gap: 12px;
-   margin: 38px 0px;
+   margin: 30px 0px;
 }
 
 .pro-card {
@@ -1663,7 +1675,7 @@ body {
 .contact-details {
    display: flex;
    flex-direction: column;
-   row-gap: 60px;
+   row-gap: 30px;
    margin-bottom: 50px;
 }
 
@@ -1778,7 +1790,7 @@ body {
 
 .contact-social-links {
    display: flex;
-   column-gap: 25px;
+   column-gap: 15px;
    width: 100%;
 }
 

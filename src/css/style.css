@@ -955,6 +955,13 @@ body {
    row-gap: 25px;
 }
 
+.about-buttons .main-btn:title {
+   color: var(--color-01);
+   font-size: var(--small-font-size);
+   font-weight: var(--font-medium);
+   transition: 0.3s;
+}
+
 /* =========================================
    My Resume
 ========================================= */
@@ -1961,6 +1968,7 @@ body {
    color: var(--color-04);
    font-size: var(--small-font-size);
    margin-top: 10px;
+   text-align: center;
 }
 
 .footer .copy-right a {
@@ -2340,6 +2348,11 @@ body {
 
    .home-container .wrapper {
       padding-top: 100px;
+   }
+
+   .contact-form-body{
+      padding-left: 30px;
+      padding-right: 30px;
    }
 
    .contact-form-body form .send-mess {

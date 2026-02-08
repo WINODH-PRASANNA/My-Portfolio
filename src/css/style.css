@@ -2329,7 +2329,7 @@ body {
 
    .avatar-container {
       margin: auto 0;
-      margin-top: 70px;
+      margin-top: 0px;
    }
 
    .avatar-container .avatar-info .name {
@@ -2367,7 +2367,7 @@ body {
 @media screen and (max-width: 479px) {
    .avatar-container {
       margin: auto 0;
-      margin-top: 70px;
+      margin-top: 0px;
    }
 
    .hire-btn-1{
@@ -2378,3 +2378,4 @@ body {
       margin-top: 30px;
    }
 }
+

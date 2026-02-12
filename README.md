@@ -1,7 +1,7 @@
 
-# 💼 Winodh Prasanna | Personal Portfolio Website
+# 💼 My Personal Portfolio Website
 
-![Tastee.lk Home Page](https://i.imgur.com/ksmItuq.png)
+![Tastee.lk Home Page](https://i.imgur.com/VDiyWJH.png)
 
 This is a modern, interactive, and fully responsive **personal portfolio website** designed and developed by **Winodh Prasanna**, a Fullstack Web Developer. It serves as a professional showcase of projects, education, experience, and skills with engaging UI and functionality.
 

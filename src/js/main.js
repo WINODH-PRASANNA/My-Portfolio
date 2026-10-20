@@ -157,7 +157,7 @@ Send/Receive emails from contact form - EmailJS
 
 (function () {
     emailjs.init({
-        publicKey: "RJ7vSDjpcRXtIAvmR",
+        publicKey: "bbHVPh2BokLNljNF3",
     });
 })();
 
@@ -169,12 +169,12 @@ document.addEventListener("DOMContentLoaded", function () {
         contactForm.addEventListener("submit", function (event) {
             event.preventDefault();
 
-            emailjs.sendForm("service_43jhroh", "template_8yjer1g", contactForm)
+            emailjs.sendForm("service_b46gb4i", "template_8yjer1g", contactForm)
                 .then(() => {
                     contactFormAlert.innerHTML = "<span>Message Sent Successfully!</span> <i class='ri-checkbox-circle-fill'></i>";
                     (function () {
                         emailjs.init({
-                            publicKey: "RJ7vSDjpcRXtIAvmR",
+                            publicKey: "bbHVPh2BokLNljNF3",
                         });
                     })();
 
@@ -186,13 +186,13 @@ document.addEventListener("DOMContentLoaded", function () {
                             contactForm.addEventListener("submit", function (event) {
                                 event.preventDefault();
 
-                                emailjs.sendForm("service_43jhroh", "template_8yjer1g", contactForm)
+                                emailjs.sendForm("service_b46gb4i", "template_8yjer1g", contactForm)
                                     .then(() => {
                                         contactFormAlert.innerHTML = "<span>Message Sent Successfully!</span> <i class='ri-checkbox-circle-fill'></i>";
                                         contactForm.reset();
                                     })
                                     .catch((error) => {
-                                        contactFormAlert.innerHTML = "<span>Message Not Sent!</span> <i class='ri-error-warning-fill'></i>";
+                                        contactFormAlert.innerHTML = "<span>Message Not Send!</span> <i class='ri-error-warning-fill'></i>";
                                         console.error("EmailJS Error:", error);
                                     });
                             });
@@ -203,7 +203,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 })
                 .catch((error) => {
-                    contactFormAlert.innerHTML = "<span>Message Not Sent!</span> <i class='ri-error-warning-fill'></i>";
+                    contactFormAlert.innerHTML = "<span>Message Not Send!</span> <i class='ri-error-warning-fill'></i>";
                     console.error("EmailJS Error:", error);
                 });
         });
